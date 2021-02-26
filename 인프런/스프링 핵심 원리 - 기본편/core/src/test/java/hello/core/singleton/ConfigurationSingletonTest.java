@@ -33,8 +33,10 @@ public class ConfigurationSingletonTest {
 
     @Test
     void configurationDeep() {
+        //AppConfig도 스프링 빈으로 등록된다
         ApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
         AppConfig bean = ac.getBean(AppConfig.class);
+        //출력: bean = class hello.core.AppConfig$$EnhancerBySpringCGLIB$$bd479d70
 
         System.out.println("bean = " + bean.getClass());
     }
