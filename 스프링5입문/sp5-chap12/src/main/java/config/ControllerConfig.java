@@ -7,8 +7,6 @@ import org.springframework.context.annotation.Configuration;
 import spring.MemberRegisterService;
 import survey.SurveyController;
 
-import javax.management.MXBean;
-
 @Configuration
 public class ControllerConfig {
 
